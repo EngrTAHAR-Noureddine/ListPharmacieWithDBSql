@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyListPharmacie</string>
+    <string name="phone">12345678</string>
+    <string name="phonetext">Phone</string>
+    <string name="adressetxt">adresse</string>
+    <string name="nomtxt">Nom</string>
+    <string name="me">TAHAR</string>
+    <string name="address">Algiers,Algieria</string>
 </resources>

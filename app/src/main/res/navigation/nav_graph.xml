@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listPharmacieFragment">
+
+    <fragment
+        android:id="@+id/listPharmacieFragment"
+        android:name="com.example.mylistpharmacie.listpharmacie.ListPharmacieFragment"
+        android:label="list_pharmacie_fragment"
+        tools:layout="@layout/list_pharmacie_fragment" >
+        <action
+            android:id="@+id/action_listPharmacieFragment_to_pharmacieFragment"
+            app:destination="@id/pharmacieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pharmacieFragment"
+        android:name="com.example.mylistpharmacie.pharmacie.PharmacieFragment"
+        android:label="pharmacie_fragment"
+        tools:layout="@layout/pharmacie_fragment" >
+        <action
+            android:id="@+id/action_pharmacieFragment_to_listPharmacieFragment"
+            app:destination="@id/listPharmacieFragment" />
+    </fragment>
+</navigation>
